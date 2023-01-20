@@ -427,58 +427,59 @@
             <use href="./img/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <form>
-          <div
-            class="contacts-form"
-            role="group"
-            aria-labelledby="user-contacts"
-          >
-            <p class="title-form" id="user-contacts">
+<!------------Modal Form------------>
+        <div class="modal-form">
+        <form class="modal-form-contacts">
+            <p class="title-form">
               Leave your contacts and we will call you back
             </p>
+            <div class="form-user-info">
             <label class="contacts-field">
-              <span>Name</span>
-              <input class="contats-input" type="text" name="user_name" />
-              <svg class="contacts-form-icon">
-                <use href=""></use>
+              <span class="input-title">Name</span>
+              <input class="contacts-input" type="text" name="user_name" required>
+              <svg class="form-icon-user">
+                <use href="./img/icons.svg#icon-user"></use>
               </svg>
             </label>
 
             <label class="contacts-field">
-              <span>Phone</span>
-              <input class="contacts-input" type="phone" name="user_phone" />
-              <svg class="contacts-form-icon">
-                <use href=""></use>
+              <span class="input-title">Phone</span>
+              <input class="contacts-input" type="phone" name="user_phone" required>
+              <svg class="form-icon-tel">
+                <use href="./img/icons.svg#icon-user-phone"></use>
               </svg>
             </label>
 
             <label class="contacts-field">
-              <span>Email</span>
-              <input class="contacts-input" type="Email" name="user_mail" />
-              <svg class="contacts-form-icon">
-                <use href=""></use>
+              <span class="input-title">Email</span>
+              <input class="contacts-input" type="email" name="user_mail" required>
+              <svg class="form-icon-mail">
+                <use href="./img/icons.svg#icon-user-mail"></use>
               </svg>
             </label>
 
-            <label>
-              <span>Comment</span>
-              <textarea
+            <label class="text-area">
+              <span class="input-title">Comment</span>
+              <textarea class="text-area-text"
                 name=""
                 cols="30"
                 rows="10"
-                placeholder="Text input"
-              ></textarea>
+                placeholder="Text input">
+            </textarea>
             </label>
+            </div>
             <label class="contacts-agreement">
-              <input class="contacts-checkbox" type="checkbox" name="" />
-              <span class="accept-text"
-                >I accept the terms and conditions of the
-                <a class="form-link" href="">Privacy Policy</a></span
-              >
+              <input class="form-checkbox" type="checkbox" name="checkbox">
+              <span class="check-icon">
+              </span>
+              <span class="accept-text">I accept the terms and conditions of the
+                <a class="accept-link" href="">Privacy Policy</a></span>
             </label>
+<div class="box-button-send">
+          <button class="send-button" type="submit">Send</button>
           </div>
-          <button class="btn main-btn send-button" type="submit">Send</button>
         </form>
+        </div>
       </div>
     </div>
     <script src="./modal.js"></script>
