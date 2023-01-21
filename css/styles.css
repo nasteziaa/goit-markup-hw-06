@@ -500,7 +500,7 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-team-text);
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .footer-social-list {
@@ -884,7 +884,6 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-origin: border-box;
-  
 }
 
 .accept-text {
