@@ -870,6 +870,7 @@ p {
 }
 
 .check-icon {
+  display: inline-block;
   width: 16px;
   height: 16px;
   margin-top: 16px;
@@ -880,7 +881,7 @@ p {
 .form-checkbox:checked + .check-icon {
   background-color: var(--color-icons-team);
   border-color: var(--color-icons-team);
-  background-image: url(/img/checkbox.svg);
+  background-image: url("../img/checkbox.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-origin: border-box;
